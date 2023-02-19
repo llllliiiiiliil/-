@@ -1,4 +1,6 @@
-a = [[10,20],
-     [30,40],
-     [50,60]]
-print(a[2][0])
+import test
+
+
+a = test.bugerking()
+
+a.selling()

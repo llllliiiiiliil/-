@@ -1,3 +1,6 @@
-for i in range(1,11):
-    print(i)
-print("피자 꿀맛")
+class bugerking:
+    hb = 10
+    wp = 10
+    f = 10
+    def selling(self):
+        print("판매되었습니다")

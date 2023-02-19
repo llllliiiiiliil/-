@@ -1,12 +1,16 @@
-def sum1(n):
-    a = 0
-    for i in range(1,n+1):
-        a += i * i
-    return a
+import school
 
-def sum2(n):
-    a = 0
-    a += n * (n + 1) * (2 * n + 1) // 6
-    return a
+a = school.Student('kim',1)
+b = school.Student("lee",2)
+c = school.Student("park",3)
 
-print(sum2(1000000000000))
+a.greeting()
+
+
+mathTeacher = school.Teacher('math','수학선생님')
+enTeacher = school.Teacher('english','영어선생님')
+
+mathTeacher.greeting()
+enTeacher.greeting()
+
+ban1 = school.Class(1,"선생님1","학생1")
