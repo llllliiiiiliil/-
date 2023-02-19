@@ -5,6 +5,9 @@ class Student:
         self.math = 0
         self.english = 0
 
+
+
+
     def studyMath(self):
         print("수학공부했습니다 수학 능력이 10 올랐어요")
         self.math += 10
@@ -26,6 +29,14 @@ class Class:
         self.teacher = teacher
         self.student = []
         self.ban = ban
+
+    def mathavg(self):
+        mathscorelist = []
+        for i in self.student:
+            mathscorelist.append(i.math)
+        avg = sum(mathscorelist) / len(self.student)
+        print(f"이 반의 수학 평균은 {avg}입니다")
+
 
     def addstudent(self,student):
         self.student.append(student)
